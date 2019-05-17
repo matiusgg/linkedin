@@ -38,15 +38,22 @@ require_once('app/Models/Contacto.php'); // Usamos el requied aqui porque querem
 
 // Y si lo hicieramos con el contructor, entonces tendriamos que definir los valores o datos de las porpiedades que llamamos en el constructor dentro de los parametros del objetos
 
-$pepe = new Contacto('Pepe', 'Gutierrez Jabala');
+//$pepe = new Contacto('Pepe', 'Gutierrez Jabala');
 
 // COmprobacion
 
-echo('<pre>');
-print_r($pepe);
-echo('</pre>');
+// echo('<pre>');
+// print_r($pepe);
+// echo('</pre>');
 
+// OTro objeto
 
+$juan = new Contacto('Juan', 'Gutierrez Jabala', 'jose@gg.com', '464564566', 'linekdin.com', 'twitter.com');
+$juan->subtitulo = 'FrontEn & backEnd';
+
+// echo('<pre>');
+// print_r($juan);
+// echo('</pre>');
 
 
 

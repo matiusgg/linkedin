@@ -32,7 +32,15 @@ include_once('php/funciones.php'); // las funciones y las variables no se pueden
     <h1 class = "logotipo">
         <span>
         <?php
-        echo($logo);
+
+        // Al tener una ckase de CONTACTO donde hicimos todo la parte del contenido de CONTACTO, entonces este echo($logo); no ya no nos serivira
+        //echo($logo);
+
+        // Ahora si queremos hacer en esta pase del logo, pero con POO, POr lo cual hacemos un echo del OBJETO y si queremos podemos indicarle que nos muestre solo la propiedad de nombre, o que nos muestre el comportamiento( en este caso de logo()) para que nos muestre las iniciales del nombre completo del OBJETO.
+
+        //echo( $juan->nombre);
+       
+         echo($juan -> logo());
         ?>
         </span>
     </h1>
@@ -40,37 +48,48 @@ include_once('php/funciones.php'); // las funciones y las variables no se pueden
     <!-- informacion contacto -->
     <h2 class = "nombre">
         <?php
-        echo($nombre);
+        echo($juan->nombre . $juan->apellido);
         ?>
         <!-- Mateo g -->
     </h2>
-    <h3 class = "subtitulo">Estudiante</h3>
+    <h3 class = "subtitulo">
+       <!-- Estudiante-->
+       <?php
+echo($juan->subtitulo);
+
+?>
+    </h3>
     <ul class = "infoContacto">
         <li class = "infoContacto__mail">
             <span class = "infoContacto__mail--black">Mail:</span>
             <?php
-        echo($contacto['mail']);
+        //echo($contacto['mail'])
+        // Con POO
+        echo($juan->mail);;
         ?>
             <!-- holaxd@gmail.com -->
         </li>
         <li class = "infoContacto__movil">
             <span class = "infoContacto__movil--black">Movil:</span>
             <?php
-        echo($contacto['movil']);
+        //echo($contacto['movil']);
+        echo($juan->movil);
         ?>
             <!-- +34 000 000 000 -->
         </li>
         <li class = "infoContacto__linkedin">
             <span class = "infoContacto__linkedin--black">Linkedin</span>
             <?php
-        echo($contacto['linkedin']);
+        //echo($contacto['linkedin']);
+        echo($juan->linkedin);
         ?>
             <!-- http://www.linkedin.com/hkgsdjhs -->
         </li>
         <li class = "infoContacto__twitter">
             <span class = "infoContacto__twtter--black">Twitter:</span>
             <?php
-        echo($contacto['twitter']);
+        //echo($contacto['twitter']);
+        echo($juan->twitter);
         ?>
             <!-- @papu -->
         </li>
