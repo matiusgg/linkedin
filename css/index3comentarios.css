@@ -1,0 +1,177 @@
+/*
+*Bloque de Estyilos basicos */
+*{
+    box-sizing: border-box;
+}
+
+html{
+
+    font-size: 16px;
+}
+body{
+    /* color de fondo*/
+background-color: rgb(242, 242, 242);
+/* color de texto*/
+color: #707070;
+/* tipografia, tipo*/
+font-family: Arial, sans-serif;
+/* tipografia, tamaño*/
+font-size: 16px;
+/*margen superior*/
+margin-top: 35px;
+display: flex;
+justify-content: center;
+
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;
+    height: 190px; */
+
+}
+
+div.margenvertical{
+
+    margin-bottom: 2.5rem; /* esto nos ayudara a que halla un determinado espacio entre las partes de la pagina*/
+}
+
+p{
+    text-align: justify; /* esto nos sirve para que el texto o parrafo se ajuste a las medidas del margen*/
+}
+
+#contenedor{
+    width: 800px; /* al relacionarlo con htmls nos permitira en el diseño agrupar todo el contenido de header de body aqui, permite ajustar el contenido */
+    
+}
+
+.tituloCentral{
+    font-size: 30px;
+    color: #707070;
+    margin-bottom: 1.031rem; /* para todos los titulos principales */
+
+}
+
+.subtituloCentral{
+    font-size: 18px;
+    color: #707070;
+    margin-bottom: 1.031rem; /* para todos los titulos principales */
+    font-weight: 900;
+    
+}
+
+.parrafo{
+    font-size: 16px;
+    line-height: 1.3rem;
+    font-weight: normal; /*es como agregarle forma a la letra, como negrilla*/
+    
+}
+/*
+*Bloque de HEADER */
+
+header{
+    display: flex;
+}
+
+.logotipo{  /* como vemos lo mejor es especificar la ruta de donde proviene el "class"*/
+    font-family: Impact;
+    font-size: 8rem;
+    color: #707070;
+
+    /* box-sizing : content-box; */
+    width: 290px;
+    height: 290px; 
+    background-color: #DDDDDD;
+    margin-right: 50px; /* permite poner un contenido a la izquiera, y hay otra para la derecha
+    /* padding: 100px 50px 100px 50px. arriba, derecha, abajo, izquiera*/
+    /*padding: 100px 0; */
+
+    /* para centrar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nombre{
+    font-size: 3.125rem;
+    font-family: Impact, sans-serif;
+    color: #202428;
+    margin-bottom: 0.8rem
+    /*margin-bottom: 0.8rem*/
+
+
+}
+
+
+.subtitulo{
+    font-size: 1.875rem;
+    margin-bottom: 0.8rem
+    /*margin-bottom: 0.8rem*/
+}
+
+
+.infoContacto{
+    margin-left: 3rem;
+}
+.infoContacto li{
+    margin-bottom: 0.8rem
+    /*margin-bottom: 0.8rem*/
+
+}
+
+/*.resumen_titulo{
+    font-size: 1.875rem;
+    color: #707070;
+    margin-bottom: 1.031rem; 
+    margin-top: 2.438rem;
+    margin-bottom: 1.031rem; lo puse en modo comentario porque los titulos los podemos poner en un estilo general*/ 
+}
+.resumen_parrafo{
+    font-size: 1rem;
+    color: #707070; 
+    margin-top: 1.031rem;
+}
+
+
+/*Seccion central*/
+
+.sectionCentral{
+    display: flex; /*une los contenidos, pero nos sirve para organizarlo mejor.*/
+    justify-content: space-between; /* permite separar los contenidos con los espacio que le damos a dferencia de display que los une*/
+
+}
+
+.certificados{
+width: 60%; /* comom vemos sirve para distribuir el contenido en diferentes parte, en este caso en los porcentajes quiere decir el espacio que va ocupar ese contenido*/
+
+
+}
+
+.habilidades{
+
+width: 35%;
+}
+
+.certificados article{
+
+    margin-left: 60px; /* cuando estamos separando objetos es mejor margin ya que nos permite mover dentro del tamaño de la pagina no mueve el contenido en si, en cambio padding que solo mueve el contenido señalado*/
+    margin-top: 30px; 
+
+}
+
+.certificados_proyecto {
+    margin: 2rem 0 0 2rem; /*abajo, arriba, derecha e izquierda*/
+}
+
+
+section{
+    display: flex;
+    flex-direction: colum;
+
+}
+
+
+
+

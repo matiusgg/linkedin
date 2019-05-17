@@ -1,0 +1,183 @@
+/**
+*Bloque de Estilos basicos
+* Color de fondo
+**/
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    /*Color de fondo*/
+    background-color:  #f2f2f2;
+    /*Color de texto*/
+    color: #707070;
+    /* tipografia, tipo*/
+    font-family: Arial, sans-serif;
+    /*Tipografia, tamaño*/
+    font-size: 16px;
+    /*Margen superior*/
+    margin-top: 35px;
+  display: flex;
+  justify-content: center; 
+}
+#contenedor{
+    width: 800px;
+}
+/*BLOQUE HEADER*/
+header{
+    display: flex;
+}
+.logotipo{
+    font-family: Impact;
+    font-size: 8rem;
+    color:#707070;
+
+    width: 290px;
+    height: 290px;
+    background-color: #dddddd;
+    margin-right: 50px;
+    /*Centrar*/
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+.informacion{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.nombre{
+    font-size: 3.125;
+    font-family: Impact,  sans-serif;
+    color: #202428;
+    margin-bottom: 0.8rem;
+}
+.subtitulo{
+    font-size: 1.875rem;
+    margin-bottom: 0.8rem;
+
+}
+.infoContacto{
+    margin-left: 3rem;
+}
+.infoContacto li{
+margin-bottom: 0.8rem;
+}
+
+
+.resumen__parrafo{
+    font-size: 1.000em;
+}
+
+.resumen__titulo{
+    font-size: 1.875em;
+color: #707070;
+}
+div.margenVertical{
+    margin-bottom: 2.5rem;
+}
+p{
+    text-align: justify;
+}
+/*Section Central*/
+.sectionCentral{
+    display: flex;
+    justify-content: space-between;
+}
+.certificados{
+    width: 60%;
+}
+.certificados article{
+margin-left: 60px;
+margin-top: 30px;
+}
+
+.certificados_proyectos{
+    margin: 2rem 0 0 2rem;
+}
+
+.habilidades{
+    width: 35%;
+}
+
+.tituloCentral{
+    font-size: 20px;
+color: #707070;
+}
+
+.subtituloCentral{
+    font-size: 18px;
+    font-weight: 900;
+    color: #707070;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.parrafo{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.3rem;
+    margin-top: 10px;
+    
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+article:nth-last-child(2n){
+    justify-self: flex-end;
+}
+
+/* Proyectos */
+
+article.proyectos {
+
+
+    margin-bottom: 2rem;
+}
+
+.proyNUM {
+
+
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.proyNUM img {
+width: 25%;
+}
+
+.proyNUM .texto {
+width: 70%;
+}
+
+/*  */
+.derecha {
+
+flex-direction: row-reverse;
+}
+
+article.proyectos .texto .tecnologia {
+    display: block;
+    color: rgb(73, 73, 73);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    width: 50%;
+
+}
+
+article.proyectos .texto .tecnologia h3{
+    padding: 0.5rem;
+    border-radius: 30%;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-size: 0.6rem;
+
+}
