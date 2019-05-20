@@ -67,56 +67,56 @@ $cc++;
 
 
 // Habilidades
-function habilidad() {
+// function habilidad() {
 
-    include('php/datosindex3.php');
+//     include('php/datosindex3.php');
 
-    for($i = 0; $i < count($habilidades) ; $i++) { 
+//     for($i = 0; $i < count($habilidades) ; $i++) { 
 
     
-        $contadorProyectos = count($habilidades[$i]) - $Titulonombre;
+//         $contadorProyectos = count($habilidades[$i]) - $Titulonombre;
         
         
         
-        echo('<article>');
-            echo('<ul class="habilidades_habilidades">');
+//         echo('<article>');
+//             echo('<ul class="habilidades_habilidades">');
             
                  
             
             
-            if( isset($habilidades[$i] [0])) 
-            {
-                        echo('<li class="habilidades_habilidades_titulo subtituloCentral">');
-                     echo($habilidades[$i] [0]);
-                     echo('</li>');
-                    };
+//             if( isset($habilidades[$i] [0])) 
+//             {
+//                         echo('<li class="habilidades_habilidades_titulo subtituloCentral">');
+//                      echo($habilidades[$i] [0]);
+//                      echo('</li>');
+//                     };
 
                   
             
-                    $cc = 0;
+//                     $cc = 0;
                     
-                    while($cc < $contadorProyectos){
+//                     while($cc < $contadorProyectos){
                         
                     
            
-                echo('<li class="habilidades_parrafo">');
-                echo($habilidades[$i] [$Titulonombre + $cc]);
-                echo('</li>');
+//                 echo('<li class="habilidades_parrafo">');
+//                 echo($habilidades[$i] [$Titulonombre + $cc]);
+//                 echo('</li>');
 
                 
         
-        $cc++;
-        };
+//         $cc++;
+//         };
                 
                  
                 
-                echo('</ul>');
-                echo('</article>');
+//                 echo('</ul>');
+//                 echo('</article>');
         
-            };
+//             };
 
 
-};
+// };
 
 // Proyectos
 

@@ -15,12 +15,18 @@ class Contacto{
     public $movil = 'No incluido';
     public $linkedin = 'No incluido';
     public $twitter = 'No incluido';
+    // Para no hacer una clase para solo algunas cosas
+
+    // Parte RESUMEN, parrafo
+
+public $resumen_parrafo = 'No incluido';
+
     
     // CONTRUCTOR: NO ES UN COMPORTAMIENTO, va despues de propiedades. 
     // Aqui la diferencia con los comportaminetos es que aqui si usamos parametros, porque cuando hagamos el objeto al poner la porpiedad igual que el parametro del contructor, nos permitira despues que al crear el objeto, dentro de () osea los parametros del objetos se relacionaran con los parametros del contructor por lo cual podemos poner los valores de las propiedades directamente ahi.
 
     // TIP: Si queremos poner todos las porpiedades para que sean iguales a los parametros de contruccion para al crear objetos pongamos los valores dentro de los parametros del objeto. Hay q ue tener en cuenta que si no ponemos todos, los datos con este medio nos petara porque al hacerlo asi, nos exigira que pongamos todos los datos de contruct en el objeto, osea no te puedes dejar ninguno. Ademas no podemos ponerle valor o datos a las propiedades del objeto fuera de los paraqmetros de la funcion, ya que lo estariamos repitiendo, lo cual nos daria un espacio en blanco. Lo ideal es que en el constructor no pongamos todas las propiedades, ya que tambien podriamos usar otras propiedades para algo.
- public function __construct($nombre, $apellido, $mail, $movil, $linkedin, $twitter){
+ public function __construct($nombre, $apellido, $mail, $movil, $linkedin, $twitter, $resumen_parrafo){
 
         // Como vemos lo que hicimos fue que el parametro de 'contructor' sea igual a la propiedad, la porpiedad la pusimos con $this
        $this -> nombre = $nombre;
@@ -29,7 +35,8 @@ class Contacto{
       $this -> movil = $movil;
       $this -> linkedin = $linkedin;
       $this -> twitter = $twitter;
-    
+      $this -> resumen_parrafo = $resumen_parrafo;
+  
       
  }
     // Comportamientos de la Clase Contacto
@@ -79,6 +86,9 @@ class Contacto{
 // echo('</pre>');
 
 // y si creamos un objeto dentro del acrhivo de CLASE
+
+
+
 
 
 ?>

@@ -48,7 +48,19 @@ require_once('app/Models/Contacto.php'); // Usamos el requied aqui porque querem
 
 // OTro objeto
 
-$juan = new Contacto('Juan', 'Gutierrez Jabala', 'jose@gg.com', '464564566', 'linekdin.com', 'twitter.com');
+$juan = new Contacto('Juan', 
+'Gutierrez Jabala',
+ 'jose@gg.com', 
+ '464564566',
+  'linekdin.com',
+   'twitter.com',
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Quam labore excepturi est doloribus rem, 
+officiis voluptatem harum inventore nemo quae ad eum eos sunt saepe distinctio magni eius nobis corporis!
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+Libero reiciendis enim, modi dignissimos amet eum,
+ inventore minima sit excepturi, voluptatum perspiciatis maiores!
+ Earum odio voluptates alias neque corporis excepturi dolores!');
 $juan->subtitulo = 'FrontEn & backEnd';
 
 // echo('<pre>');
@@ -72,15 +84,16 @@ $juan->subtitulo = 'FrontEn & backEnd';
 
 // section resumen
 
+// El titulo del resumen no pasa nada si no lo colocamos en POO
 $resumen_titulo = 'Resumen de mi carrera';
 
-$resumen_parrafo = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Quam labore excepturi est doloribus rem, 
-officiis voluptatem harum inventore nemo quae ad eum eos sunt saepe distinctio magni eius nobis corporis!
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-Libero reiciendis enim, modi dignissimos amet eum,
- inventore minima sit excepturi, voluptatum perspiciatis maiores!
- Earum odio voluptates alias neque corporis excepturi dolores!';
+// $resumen_parrafo = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+// Quam labore excepturi est doloribus rem, 
+// officiis voluptatem harum inventore nemo quae ad eum eos sunt saepe distinctio magni eius nobis corporis!
+// Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+// Libero reiciendis enim, modi dignissimos amet eum,
+//  inventore minima sit excepturi, voluptatum perspiciatis maiores!
+//  Earum odio voluptates alias neque corporis excepturi dolores!';
 
 
 
@@ -115,34 +128,58 @@ $certificado = [
     ];
 
 
-    $Titulonombre = 1; // para habilidades
+    // $Titulonombre = 1; // para habilidades
 
-    $habilidades = [
+    // HABILIDADES POO: OBJETOS
+
+    require_once('app/Models/Habilidades.php');
+
+    $frontend = new habilidad('Frontend');
+    //$frontend-> $titulohabilidades = 'Frontend';
+    // Aqui ponemos los datos para que el bucle haga su funcion
+
+    
+    $frontend-> habilidad01 = 'MYSQL';
+    $frontend-> habilidad02 = 'CSS';
+    $frontend-> habilidad02 = 'javaScript';
 
 
-        [
-            'Backend',
-            'MysQL',
-            'PHP',
-            'PHYTON' 
+    $backend = new habilidad('Backend');
+
+    //$backend-> $titulohabilidades = 'Backend';
+
+    $backend-> habilidad01 = 'MYSQL';
+    $backend-> habilidad02 = 'PHP';
+    $backend-> habilidad03 = 'PHYTON';
+    // $disenyo = new habilidad('Diseño', 'Adobe Photoshop');
+
+
+    // $habilidades = [
+
+
+    //     [
+    //         'Backend',
+    //         'MysQL',
+    //         'PHP',
+    //         'PHYTON' 
         
 
-        ],
-        [
-            'Frontend',
-            'JavaScript',
-            'CSS',
-            'SASS',
-            'HTLM5'
-        ],
-        [
-            'Frameworks',
-            'DJANCO',
-            'EXPRESS',
-            'LARAVEL',
-            'JavaScript'
-        ]
-        ];
+    //     ],
+    //     [
+    //         'Frontend',
+    //         'JavaScript',
+    //         'CSS',
+    //         'SASS',
+    //         'HTLM5'
+    //     ],
+    //     [
+    //         'Frameworks',
+    //         'DJANCO',
+    //         'EXPRESS',
+    //         'LARAVEL',
+    //         'JavaScript'
+    //     ]
+    //     ];
 
 
         $Titulonombre = 1; // para habilidades

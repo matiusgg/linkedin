@@ -112,7 +112,9 @@ echo($juan->subtitulo);
 <hr>
 <p class="resumen_parrafo">
     <?php
-    echo($resumen_parrafo);
+    // echo($resumen_parrafo);
+
+    echo($juan->resumen_parrafo);
     ?>
 
  </p>
@@ -140,8 +142,72 @@ echo($juan->subtitulo);
     <h4>habilidades & herramientas</h4>
     <hr>
     <?php
-    habilidad();
+    
+//     for($i = 0; $i < count($habilidades) ; $i++) { 
+
+    
+//         $contadorProyectos = count($habilidades[$i]) - $Titulonombre;
+        
+        
+        
+//         echo('<article>');
+//             echo('<ul class="habilidades_habilidades">');
+            
+                 
+            
+            
+//             if( isset($habilidades[$i] [0])) 
+//             {
+//                         echo('<li class="habilidades_habilidades_titulo subtituloCentral">');
+//                      echo($habilidades[$i] [0]);
+//                      echo('</li>');
+//                     };
+
+                  
+            
+//                     $cc = 0;
+                    
+//                     while($cc < $contadorProyectos){
+                        
+                    
+           
+//                 echo('<li class="habilidades_parrafo">');
+//                 echo($habilidades[$i] [$Titulonombre + $cc]);
+//                 echo('</li>');
+
+                
+        
+//         $cc++;
+//         };
+                
+                 
+                
+//                 echo('</ul>');
+//                 echo('</article>');
+        
+//             };
+
+
+// };
+         
     ?>
+
+<article>
+            <ul class="habilidades_habilidades">
+            
+                        
+                 
+    <?php
+
+$frontend->buclehabilidades();
+
+$backend->buclehabilidades();
+
+    ?>
+           
+                 
+                </ul>
+                </article>
     
     </aside>
 </div>
